@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "grabenbach_regular" ;
+    src: url("../type/grabenbach_regular.otf");
+}
+.mobile{
+    display: none;
+}
+body{
+    font-family: "grabenbach_regular", Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+header section{
+    padding: 40px 0 40px 0;
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
+    width: 90%;
+    max-width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    gap: 40px;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+main , footer{
+    width: 90%;
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+h1{
+    padding-top: 208px;
+    font-size: 60px;
+    line-height: 84px;
+}
+h1 span{
+    color: red;
+}
+
+.work{
+    display: flex;
+    gap:88px;
+    align-items: center;
+    padding-top: 170px;
+    margin-bottom: 96px;
+    position: relative;
+}
+.work img{
+    width: 568px;
+    border-radius: 24px;
+}
+.work div{
+    width: 494px;
+}
+.work h3{
+    font-size: 30px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.work p{
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+.work a{
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+}
+@keyframes pepeColor {
+    0%{
+        background-color: aqua;
+    }
+    25%{
+        background-color: blue;
+        top: 80px;
+    }
+    75%{
+        background-color: brown;
+        padding-left: 60px;
+        padding-right: 60px;
+        top: 100px;
+        left:1000px
+    }
+    100%{
+        background-color: black;
+    }
+    
+}
+
+
+.button{
+    background-color: black;
+    padding: 8px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    animation: pepeColor 8s;
+    position: absolute;
+
+}
+.button a{
+    color: white !important;
+}
+.button:hover{
+   
+}
+
+.galery{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.galery img{
+    width: 30%;
+    border-radius: 24px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 139px;
+    margin-bottom: 88px;
+}
+footer p{
+    font-size: 30px;
+    line-height: 42px;
+    width: 50%;
+    max-width: 556px;
+    
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    align-items: flex-end;
+
+}
+#contact a{
+    font-size: 20px;
+    line-height: 28px;    
+    color: black;
+    text-decoration: none;  
+}
+
+#rrss{
+    display: flex;
+    gap: 32px;
+}
+
+.footerMobile{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body{
+        background-color: red;
+    }
+    header{
+        display: none;
+    }
+    main{
+        display: none;
+    }
+    .footerDesktop{
+        display: none;
+    }
+    .footerMobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
+
+@media (max-width: 443px) {
+    body{
+        background-color: blue;
+    }
+}
+
+
